@@ -1,0 +1,17 @@
+{% extends "movie_recommend/base.html" %}
+
+{% block content %}
+        <form action="{% url 'home' %}" method="POST"><!-- 触发home函数，PSOT -->
+            {% csrf_token %}
+
+            <h2 align = Center>搜索电影 </h2>
+            <p> <br><br></p>
+            <!-- 一个输入框，一个按钮，用户搜索界面 placeholder 搜索框的提示信息-->
+            <p align = Center><input type="search" class="span3" placeholder="电影名，演员，简介等" name="data" id="search" autofocus /> </p>
+            <p align = Center><button type="submit" class="btn btn-primary btn-large pull-center">搜索 &raquo;</button></p>
+
+        </form>  
+
+{% endblock content %}
+
+<!-- 主页，一个搜索输入框和一个按钮，用于根据用户搜索词搜索电影信息 -->

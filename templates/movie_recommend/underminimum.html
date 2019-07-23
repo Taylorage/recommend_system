@@ -1,0 +1,15 @@
+{% extends "books_recsys_app/base.html" %}
+
+{% block content %}
+
+<section id="gridSystem">
+
+    <p align = Center>
+        为了获得推荐结果，你至少需要对 {{nminimumrates}} 部电影做出打分；你当前已为 {{nrates}} 部电影打过分。
+    </p>
+</section>
+
+{% endblock content %}
+
+
+<!-- 最低打分电影数量未达到要求，呈现提示 -->

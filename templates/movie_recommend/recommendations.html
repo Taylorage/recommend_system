@@ -1,0 +1,21 @@
+{% extends "movie_recommend/base.html" %}
+
+{% block content %}
+<h2 align = Center>为你推荐</h2>
+
+<section id="gridSystem">
+
+{% for rec in recs %}
+
+<div class="row show-grid">
+	<p align = Center><strong> 电影: </strong>{{ rec }} &nbsp&nbsp&nbsp&nbsp </p>
+</div>
+
+{% endfor %}
+
+</section>
+
+{% endblock content %}
+
+
+<!-- 推荐结果页面 -->

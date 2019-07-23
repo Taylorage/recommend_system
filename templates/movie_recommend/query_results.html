@@ -1,0 +1,25 @@
+{% extends "movie_recommend/base.html" %}
+
+{% block content %}
+
+<h2 align = Center>搜索结果</h2>
+
+<section id="gridSystem">
+
+{% for movie,movieindx in movies %} <!-- for循环遍历  <div> 标签可以把文档分割为独立的、不同的部分。-->
+<div class="row show-grid"> <!-- <strong> 标签用于强调文本 -->
+	<p align = Center><strong> 电影名: </strong>{{ movie }} &nbsp&nbsp&nbsp&nbsp <strong>   打分: </strong>
+
+    {% for vote in rates %}  <!-- 电影后面的分数，给用户打分  href 属性规定链接的目标-->
+    <a href="{% url 'rate_movie'  %}?vote={{vote}}&movies={{movies}}&movie={{movie}}&movieindx={{movieindx}}" method="GET"> {{vote}} </a> <!-- 根据'rate_movie'反向取得url vote变量是分数-->
+
+    {% endfor %} </p>
+</div>
+{% endfor %}
+
+</section>
+
+{% endblock content %}
+
+
+<!-- 查询结果页面 -->

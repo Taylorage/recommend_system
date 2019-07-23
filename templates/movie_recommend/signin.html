@@ -1,0 +1,13 @@
+{% extends "movie_recommend/base.html" %}
+
+{% block content %}
+        <form action="{% url 'auth' %}" method="POST">
+            {% csrf_token %}
+            <h2 align = Center>登录 </h2>
+            <p> <br><br></p>
+            <p align = Center><input type="search" class="span3" placeholder="用户名" name="name" id="search" autofocus /> </p>
+            <p align = Center><input type="search" class="span3" placeholder="密码" name="pwd" id="search" autofocus /> </p>
+            <p align = Center><button type="submit" class="btn btn-primary btn-large pull-center">登录 &raquo;</button></p>
+        </form>  
+
+{% endblock content %}
