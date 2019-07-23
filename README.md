@@ -10,20 +10,20 @@
 
 - 主页搜索
 
-![image](https://github.com/Ivan-lan/recommend_system/tree/master/1.png)
+![image](https://github.com/Ivan-lan/recommend_system/blob/master/images/1.png)
 
 - 注册
 
-![image](https://github.com/Ivan-lan/recommend_system/tree/master/2.png)
+![image](https://github.com/Ivan-lan/recommend_system/blob/master/images/2.png)
 
 - 登录
 
-![image](https://github.com/Ivan-lan/recommend_system/tree/master/3.png)
+![image](https://github.com/Ivan-lan/recommend_system/blob/master/images/3.png)
 
 - 搜索结果和打分
 
-![image](https://github.com/Ivan-lan/recommend_system/tree/master/4.png)
+![image](https://github.com/Ivan-lan/recommend_system/blob/master/images/4.png)
 
 - 推荐
 
-![image](https://github.com/Ivan-lan/recommend_system/tree/master/5.png)
+![image](https://github.com/Ivan-lan/recommend_system/blob/master/images/5.png)
